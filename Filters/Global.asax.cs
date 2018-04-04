@@ -13,6 +13,7 @@ namespace Filters
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            GlobalFilters.Filters.Add(new CustomActionFilter());
         }
     }
 }
